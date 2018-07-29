@@ -1,0 +1,10 @@
+
+<h3>Your feeds </h3>
+<div class = "well"> 
+<% @posts.each do|p| %>
+<p><h5 style="color:orange;"><%= p.title %></h5></p>
+<p><h5 style="color:brown;"><%= p.body %></h5></p>
+<%= link_to "read more" , post_path(p), :class => 'btn btn-default'%>
+<% end %>
+
+</div>
